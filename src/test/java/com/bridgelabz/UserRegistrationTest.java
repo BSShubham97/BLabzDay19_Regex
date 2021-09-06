@@ -13,4 +13,11 @@ class UserRegistrationTest {
          boolean result= userRegistration.validFirstName("Shub");
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void whenLastname_startsWithCapital() {
+        UserRegistration userRegistration= new UserRegistration();
+        boolean result= userRegistration.validLastName("Ban");
+        Assertions.assertTrue(result);
+    }
 }
