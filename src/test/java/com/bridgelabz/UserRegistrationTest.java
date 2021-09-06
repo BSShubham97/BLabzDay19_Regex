@@ -28,4 +28,11 @@ class UserRegistrationTest {
         boolean result= userRegistration.validPhoneNumber("91 9004608391");
         Assertions.assertTrue(result);
     }
+    @Test
+    void whenPasswordEntered_HasEightCharacters() {
+        UserRegistration userRegistration= new UserRegistration();
+        boolean result= userRegistration.validPassword("C0460bHd");
+        Assertions.assertTrue(result);
     }
+
+}
