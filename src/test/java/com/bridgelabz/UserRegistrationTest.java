@@ -31,7 +31,7 @@ class UserRegistrationTest {
     @Test
     void whenPasswordEntered_HasEightCharacters() {
         UserRegistration userRegistration= new UserRegistration();
-        boolean result= userRegistration.validPassword("aa833sAbhds");
+        boolean result= userRegistration.validPassword("123@DFGwwqr");
         Assertions.assertTrue(result);
     }
 

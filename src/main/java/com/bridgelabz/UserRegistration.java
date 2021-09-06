@@ -9,7 +9,7 @@ public class UserRegistration {
     private static final String LAST_NAME_PATTERN= ("^[A-Z]{1}[a-z]{2,}");
     private static final String EMAIL_PATTERN= ("[a-zA-Z]+[.]*[a-zA-Z]*[@][b][l][.][c][o][.]*[in]*");
     private static final String PHONE_PATTERN = ("[9][1](?:\\s|-)*[0-9]{10}");
-    private static final String PASSWORD_PATTERN = ("(?=.*?[A-Z])(?=.*?[0-9])[a-zA-Z0-9]{8,}$");
+    private static final String PASSWORD_PATTERN = "(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%-><.]{1}).{8,}";
 
     public boolean validFirstName(String firstName){
         Pattern pattern = Pattern.compile(FIRST_NAME_PATTERN);
