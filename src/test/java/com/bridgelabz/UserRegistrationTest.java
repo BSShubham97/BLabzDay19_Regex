@@ -10,7 +10,7 @@ class UserRegistrationTest {
     @Test
     void whenFirstname_startsWithCapital() {
         UserRegistration userRegistration = new UserRegistration();
-         boolean result= userRegistration.validFirstName("Shub");
+         boolean result= userRegistration.validFirstName("Sub");
         Assertions.assertTrue(result);
     }
 
